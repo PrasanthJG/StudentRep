@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+.sidebar {
+    @apply w-16 bg-purple-700 text-white flex flex-col items-center py-6;
+}
+
+.icon-container {
+    @apply mb-8;
+}
+
+.icon-list {
+    @apply space-y-6;
+}
+
+.main-content {
+    @apply flex-grow bg-white p-8 rounded-tl-3xl;
+}
+
+.main-header {
+    @apply flex justify-between items-center;
+}
+
+.header-title {
+    @apply text-2xl font-semibold;
+}
+
+.student-count {
+    @apply bg-purple-200 text-purple-600 px-3 py-1 rounded-full ml-2;
+}
+
+.search-profile {
+    @apply flex items-center space-x-4;
+}
+
+.search-input {
+    @apply border border-gray-300 rounded-full px-4 py-2 focus:outline-none;
+}
+
+.profile-pic {
+    @apply w-10 h-10 rounded-full bg-gray-300;
+}
+
+.filter-section {
+    @apply flex justify-between items-center mt-6;
+}
+
+.school-select {
+    @apply border border-gray-300 rounded-full px-4 py-2;
+}
+
+.add-student-button {
+    @apply bg-purple-600 text-white px-4 py-2 rounded-full;
+}
+
+.student-table {
+    @apply w-full mt-6 table-auto;
+}
+
+.table-head {
+    @apply bg-purple-100 text-purple-700;
+}
+
+.table-cell {
+    @apply px-4 py-2;
+}
+
+.table-row {
+    @apply bg-white border-b hover:bg-gray-50;
+}
+
+.student-photo {
+    @apply rounded-full;
+}

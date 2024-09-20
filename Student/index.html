@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <!-- Link Tailwind CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Container -->
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5z" />
+                </svg>
+            </div>
+            <ul class="icon-list">
+                <li><i class="icon">&#128101;</i></li>
+                <li><i class="icon">&#128218;</i></li>
+                <li><i class="icon">&#128203;</i></li>
+                <li><i class="icon">&#9881;</i></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <div class="header-title">
+                    Students <span class="student-count">82</span>
+                </div>
+                <div class="search-profile">
+                    <input type="text" placeholder="Search" class="search-input">
+                    <div class="profile-pic"></div>
+                </div>
+            </header>
+
+            <!-- Filter and Add Student -->
+            <div class="filter-section">
+                <select class="school-select">
+                    <option>Big Ben</option>
+                </select>
+                <button class="add-student-button">+ Add a student</button>
+            </div>
+
+            <!-- Student Table -->
+            <table class="student-table">
+                <thead class="table-head">
+                    <tr>
+                        <th class="table-cell">Photo</th>
+                        <th class="table-cell">ID</th>
+                        <th class="table-cell">First Name</th>
+                        <th class="table-cell">Last Name</th>
+                        <th class="table-cell">Email</th>
+                        <th class="table-cell">Phone</th>
+                        <th class="table-cell">Year Group</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dummy Data Rows -->
+                    <tr class="table-row">
+                        <td class="table-cell"><img src="https://via.placeholder.com/40" alt="Student" class="student-photo"></td>
+                        <td class="table-cell">12289</td>
+                        <td class="table-cell">Daisy</td>
+                        <td class="table-cell">Scott</td>
+                        <td class="table-cell">daisy22@gmail.com</td>
+                        <td class="table-cell">+44 214 688 6341</td>
+                        <td class="table-cell">Grade 10</td>
+                    </tr>
+                    <!-- Add more rows here -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+</html>
